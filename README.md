@@ -12,16 +12,22 @@ This repository is based on Python 3.6, TensorFlow 1.8.0, CUDA 9.0 and cuDNN 7 o
 
 1. Set up a virtual environments using conda for the Anaconda Python distribution.
 
-    conda create -n LGGAN python=3.6 anaconda
+   ```shell
+   conda create -n LGGAN python=3.6 anaconda
+   ```
 
 2. Install tensorflow-gpu.
 
-	pip install tensorflow-gpu==1.8.0
+   ```shell
+ 	 pip install tensorflow-gpu==1.8.0
+   ```
 
 3. While `nvcc` from CUDA needs to compiling TF operators, install CUDA from CUDA Source Packages. 
    After downloading, implement
 
+   ```shell
    bash cuda_9.0.176_384.81_linux.run --tmpdir=/tmp --override
+   ```
 
    Note that the installation directory is set to `/xxx/cuda-9.0`
 
@@ -29,14 +35,18 @@ This repository is based on Python 3.6, TensorFlow 1.8.0, CUDA 9.0 and cuDNN 7 o
 
 5. Install the other packages
 
-	pip install h5py
-    pip install Pillow
-    pip install matplotlib
+   ```shell
+	 pip install h5py
+   pip install Pillow
+   pip install matplotlib
+   ```
 
 6. Point clouds of the ModelNet40 data in HDF5 files are downloaded from  be automatically downloaded (416MB) to the `data` folder. 
 
+  ```shell
 	wget -c https://shapenet.cs.stanford.edu/media/modelnet40_ply_hdf5_2048.zip
 	unzip modelnet40_ply_hdf5_2048.zip
+  ```
 
 7. Download the pretrained PointNet model from [GoogleDrive](https://drive.google.com/drive/folders/11c6v_umZmSHiq-1TLKpSyPQK0E9fDkMU), extract it and put it in folder `checkpoints/pointnet/`. 
 
@@ -47,29 +57,29 @@ Usage
 
 1. Activate LG-GAN environment.
 
+  ```shell
 	source activate LGGAN
+  ```
 
 2. Set LD_LIBRARY_PATH.
 
+  ```shell
 	export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/public/zhouhang/cuda-9.0/lib64
+  ```
 
 3. Run:
 
+  ```shell
 	srun python -u lggan.py --adv_path LGGAN --checkpoints_path LGGAN --log_path LGGAN --tau 1e2
 	srun python -u lggan_single.py --adv_path LGGAN_s --checkpoints_path LGGAN_s --log_path LGGAN_s --tau 1e2
 	srun python -u lg.py --adv_path LG --checkpoints_path LG --log_path LG --tau 1e2
+  ```
 
 Usage
 --
 
 If you find our LG-GAN is useful for your research, please consider citing:
 
-@inproceedings{yu2018pu,
-     title={PU-Net: Point Cloud Upsampling Network},
-     author={Yu, Lequan and Li, Xianzhi and Fu, Chi-Wing and Cohen-Or, Daniel and Heng, Pheng-Ann},
-     booktitle = {Proceedings of IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-     year = {2018}
-}
 
 @inproceedings{zhou2020lg,
    title={LG-GAN: Label Guided Adversarial Network for Flexible Targeted Attack of Point Cloud-based Deep Networks},
