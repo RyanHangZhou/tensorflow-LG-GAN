@@ -64,7 +64,7 @@ Usage
 2. Set LD_LIBRARY_PATH.
 
    ```shell
-   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/public/zhouhang/cuda-9.0/lib64
+   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/xxx/cuda-9.0/lib64
    ```
 
 3. Run:
