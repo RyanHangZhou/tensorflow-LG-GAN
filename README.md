@@ -22,7 +22,7 @@ This repository is based on Python 3.6, TensorFlow 1.8.0, CUDA 9.0 and cuDNN 7 o
    pip install tensorflow-gpu==1.8.0
    ```
 
-3. While `nvcc` from CUDA needs to compiling TF operators, install CUDA from CUDA Source Packages. 
+3. While `nvcc` from CUDA needs to compile TF operators, install CUDA from CUDA Source Packages. 
    After downloading, implement
 
    ```shell
@@ -41,7 +41,7 @@ This repository is based on Python 3.6, TensorFlow 1.8.0, CUDA 9.0 and cuDNN 7 o
    pip install matplotlib
    ```
 
-6. Point clouds of the ModelNet40 data in HDF5 files are downloaded from  be automatically downloaded (416MB) to the `data` folder. 
+6. Point clouds of the ModelNet40 data in HDF5 files are downloaded and unzipped to the `data` folder. 
 
    ```shell
    wget -c https://shapenet.cs.stanford.edu/media/modelnet40_ply_hdf5_2048.zip
