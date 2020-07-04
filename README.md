@@ -36,7 +36,7 @@ This repository is based on Python 3.6, TensorFlow 1.8.0, CUDA 9.0 and cuDNN 7 o
 5. Install other packages.
 
    ```shell
-	 pip install h5py
+   pip install h5py
    pip install Pillow
    pip install matplotlib
    ```
@@ -44,8 +44,8 @@ This repository is based on Python 3.6, TensorFlow 1.8.0, CUDA 9.0 and cuDNN 7 o
 6. Point clouds of the ModelNet40 data in HDF5 files are downloaded from  be automatically downloaded (416MB) to the `data` folder. 
 
    ```shell
-	 wget -c https://shapenet.cs.stanford.edu/media/modelnet40_ply_hdf5_2048.zip
-	 unzip modelnet40_ply_hdf5_2048.zip
+   wget -c https://shapenet.cs.stanford.edu/media/modelnet40_ply_hdf5_2048.zip
+   unzip modelnet40_ply_hdf5_2048.zip
    ```
 
 7. Download the pretrained PointNet model from [GoogleDrive](https://drive.google.com/drive/folders/11c6v_umZmSHiq-1TLKpSyPQK0E9fDkMU), extract it and put it in folder `checkpoints/pointnet/`. 
@@ -58,21 +58,21 @@ Usage
 1. Activate LG-GAN environment.
 
    ```shell
-	 source activate LGGAN
+   source activate LGGAN
    ```
 
 2. Set LD_LIBRARY_PATH.
 
    ```shell
-	 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/public/zhouhang/cuda-9.0/lib64
+   export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/public/zhouhang/cuda-9.0/lib64
    ```
 
 3. Run:
 
    ```shell
-	 srun python -u lggan.py --adv_path LGGAN --checkpoints_path LGGAN --log_path LGGAN --tau 1e2
-	 srun python -u lggan_single.py --adv_path LGGAN_s --checkpoints_path LGGAN_s --log_path LGGAN_s --tau 1e2
-	 srun python -u lg.py --adv_path LG --checkpoints_path LG --log_path LG --tau 1e2
+   srun python -u lggan.py --adv_path LGGAN --checkpoints_path LGGAN --log_path LGGAN --tau 1e2
+   srun python -u lggan_single.py --adv_path LGGAN_s --checkpoints_path LGGAN_s --log_path LGGAN_s --tau 1e2
+   srun python -u lg.py --adv_path LG --checkpoints_path LG --log_path LG --tau 1e2
    ```
 
 Usage
