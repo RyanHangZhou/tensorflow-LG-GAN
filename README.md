@@ -83,7 +83,7 @@ If you find our LG-GAN is useful for your research, please consider citing:
 
     @inproceedings{zhou2020lg,
       title={LG-GAN: Label Guided Adversarial Network for Flexible Targeted Attack of Point Cloud-based Deep Networks},
-      author={Zhou, Hang and Chen, Dongdong and Liao, Jing and Zhang, Weiming and Dong, Xiaoyi and Liu, Kunlin and Hua, Gang and Yu, Nenghai},
+      author={Zhou, Hang and Chen, Dongdong and Liao, Jing and Zhang, Weiming and Chen, Kejiang and Dong, Xiaoyi and Liu, Kunlin and Hua, Gang and Yu, Nenghai},
       booktitle={Proceedings of the IEEE International Conference on Computer Vision},
       pages={10356--10365},
       year={2020}
