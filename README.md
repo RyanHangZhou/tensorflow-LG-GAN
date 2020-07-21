@@ -75,7 +75,7 @@ Usage
    srun python -u lg.py --adv_path LG --checkpoints_path LG --log_path LG --tau 1e2
    ```
 
-Usage
+Reference
 --
 
 If you find our LG-GAN is useful for your research, please consider citing:
