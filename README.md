@@ -4,7 +4,7 @@ Created by [Hang Zhou](http://home.ustc.edu.cn/~zh2991/), [Dongdong Chen](http:/
 
 Introduction
 --
-This repository is for our CVPR 2020 paper '[LG-GAN: Label Guided Adversarial Network for Flexible Targeted Attack of Point Cloud-based Deep Networks](https://openaccess.thecvf.com/content_CVPR_2020/html/Zhou_LG-GAN_Label_Guided_Adversarial_Network_for_Flexible_Targeted_Attack_of_CVPR_2020_paper.html)'. 
+This repository is for our CVPR 2020 paper [LG-GAN: Label Guided Adversarial Network for Flexible Targeted Attack of Point Cloud-based Deep Networks](https://openaccess.thecvf.com/content_CVPR_2020/html/Zhou_LG-GAN_Label_Guided_Adversarial_Network_for_Flexible_Targeted_Attack_of_CVPR_2020_paper.html). 
 
 Installation
 --
