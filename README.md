@@ -31,7 +31,7 @@ This repository is based on Python 3.6, TensorFlow 1.8.0, CUDA 9.0 and cuDNN 7 o
 
    Note that the installation directory is set to `/xxx/cuda-9.0`
 
-4. For compiling TF operators, please check `tf_xxx_compile.sh` under each op subfolder in `tf_ops` folder. Note that you need to update `nvcc`, `python` and `tensoflow` include library if necessary. 
+4. For compiling TF operators, please check `tf_xxx_compile.sh` under each op subfolder in `tf_ops` folder. Note that you need to update `nvcc`, `python` and `tensoflow` to include library if necessary. 
 
 5. Install other packages.
 
@@ -70,9 +70,9 @@ Usage
 3. Run:
 
    ```shell
-   srun python -u lggan.py --adv_path LGGAN --checkpoints_path LGGAN --log_path LGGAN --tau 1e2
-   srun python -u lggan_single.py --adv_path LGGAN_s --checkpoints_path LGGAN_s --log_path LGGAN_s --tau 1e2
-   srun python -u lg.py --adv_path LG --checkpoints_path LG --log_path LG --tau 1e2
+   python -u lggan.py --adv_path LGGAN --checkpoints_path LGGAN --log_path LGGAN --tau 1e2
+   python -u lggan_single.py --adv_path LGGAN_s --checkpoints_path LGGAN_s --log_path LGGAN_s --tau 1e2
+   python -u lg.py --adv_path LG --checkpoints_path LG --log_path LG --tau 1e2
    ```
 
 Reference
