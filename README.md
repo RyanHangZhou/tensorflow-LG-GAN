@@ -1,6 +1,6 @@
 # LG-GAN
 LG-GAN: Label Guided Adversarial Network for Flexible Targeted Attack of Point Cloud-based Deep Networks
-Created by [Hang Zhou](http://home.ustc.edu.cn/~zh2991/), [Dongdong Chen](http://www.dongdongchen.bid/), [Jing Liao](https://liaojing.github.io/html/), [Weiming Zhang](http://staff.ustc.edu.cn/~zhangwm/index.html), [Kejiang Chen](http://home.ustc.edu.cn/~chenkj/), Xiaoyi Dong, Kunlin Liu, [Gang Hua](https://www.ganghua.org/), [Nenghai Yu](http://staff.ustc.edu.cn/~ynh/).
+Created by [Hang Zhou](http://www.sfu.ca/~hza162/), [Dongdong Chen](http://www.dongdongchen.bid/), [Jing Liao](https://liaojing.github.io/html/), [Weiming Zhang](http://staff.ustc.edu.cn/~zhangwm/index.html), [Kejiang Chen](http://home.ustc.edu.cn/~chenkj/), [Xiaoyi Dong](https://scholar.google.com/citations?user=FscToE0AAAAJ&hl=en), [Kunlin Liu](https://scholar.google.com/citations?user=TaSC9y8AAAAJ&hl=en&oi=ao), [Gang Hua](https://www.ganghua.org/), [Nenghai Yu](http://staff.ustc.edu.cn/~ynh/).
 
 Introduction
 --
